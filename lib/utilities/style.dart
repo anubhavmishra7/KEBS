@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-final kTitleStyle = TextStyle(
+final kTitleStyle =  TextStyle(
     color: Colors.black,
     fontFamily: 'Ariel',
     fontWeight: FontWeight.bold,

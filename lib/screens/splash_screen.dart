@@ -3,6 +3,7 @@
 //import 'package:path/path.dart as path';
 
 import 'package:expense/pages/loginpage.dart';
+//import 'package:expense/screens/onboard.dart';
 import 'package:expense/screens/onboarding_screen.dart';
 import 'package:expense/utilities/style.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _home() async {
-    await Future.delayed(const Duration(milliseconds: 3000), () {});
+    await Future.delayed(const Duration(milliseconds: 2000), () {});
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => OnboardingScreen()));
   }
@@ -56,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     alignment: Alignment.bottomCenter,
                     child: Column(
                       // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
+                      children: const [
                         Text(
                           'Office Management Suite',
                           style: TextStyle(
@@ -65,11 +66,11 @@ class _SplashScreenState extends State<SplashScreen> {
                               fontWeight: FontWeight.w700,
                               letterSpacing: 0),
                         ),
-                        const SizedBox(
+                         SizedBox(
                           height: 10,
                         ),
                         Center(
-                          child: const Text(
+                          child:  Text(
                             'Powered by Kaar Technologies',
                             style: TextStyle(
                                 color: Colors.grey,

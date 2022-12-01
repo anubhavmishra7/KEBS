@@ -55,7 +55,7 @@ class _DashboardState extends State<Dashboard> {
                   "KEBS",
                   style: kTitleStyle,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 85,
                 ),
                 Container(
@@ -70,7 +70,7 @@ class _DashboardState extends State<Dashboard> {
               ],
             ),
             bottom: PreferredSize(
-                preferredSize: Size.fromHeight(20),
+                preferredSize: const Size.fromHeight(20),
                 child: Container(
                   //color: Colors.yellow,
                   decoration: const BoxDecoration(
@@ -79,17 +79,17 @@ class _DashboardState extends State<Dashboard> {
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20))),
                   width: double.maxFinite,
-                  padding: EdgeInsets.only(top: 5, bottom: 10),
+                  padding: const EdgeInsets.only(top: 5, bottom: 10),
                   child: Center(
                       child: Container(
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(131, 158, 158, 158),
+                        color: const Color.fromARGB(131, 158, 158, 158),
                         borderRadius: BorderRadius.circular(10)),
                     width: 60,
                     height: 7,
                   )),
                 )),
-            iconTheme: IconThemeData(
+            iconTheme: const IconThemeData(
               color: Colors.black,
             ),
             backgroundColor: Colors.redAccent,
@@ -101,7 +101,7 @@ class _DashboardState extends State<Dashboard> {
               //   style: TextStyle(color: Colors.black),
               // ),
               background: Container(
-                color: Color.fromARGB(175, 255, 82, 82),
+                color: const Color.fromARGB(175, 255, 82, 82),
                 child: Stack(
                   children: <Widget>[
                     Positioned(
@@ -126,7 +126,7 @@ class _DashboardState extends State<Dashboard> {
                         top: 100,
                         left: 20,
                         child: Container(
-                          child: Text(
+                          child: const Text(
                             'Welcome Back,John!',
                             style: TextStyle(color: Colors.white, fontSize: 20),
                           ),
@@ -152,7 +152,7 @@ class _DashboardState extends State<Dashboard> {
                               width: 100,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: Color.fromARGB(210, 214, 35, 22),
+                                color: const Color.fromARGB(210, 214, 35, 22),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: const Center(
@@ -187,24 +187,24 @@ class _DashboardState extends State<Dashboard> {
                               // ),
                             ),
                             Container(
-                              child: Center(
+                              child: const Center(
                                   child: Text('Leave\nRequest',
                                       style: TextStyle(color: Colors.white))),
                               width: 100,
                               height: 100,
                               decoration: BoxDecoration(
-                                color: Color.fromARGB(210, 214, 35, 22),
+                                color: const Color.fromARGB(210, 214, 35, 22),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                             ),
                             Container(
                               width: 100,
                               height: 100,
-                              child: Center(
+                              child: const Center(
                                   child: Text('Tasks',
                                       style: TextStyle(color: Colors.white))),
                               decoration: BoxDecoration(
-                                color: Color.fromARGB(210, 214, 35, 22),
+                                color: const Color.fromARGB(210, 214, 35, 22),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                             ),

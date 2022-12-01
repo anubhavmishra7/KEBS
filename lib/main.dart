@@ -1,5 +1,6 @@
 //import 'package:expense/screens/loginpage.dart';
 //import 'package:expense/pages/dashboard.dart';
+//import 'package:expense/pages/aad_oauth.dart';
 import 'package:expense/pages/dashboard.dart';
 import 'package:expense/pages/homepage.dart';
 import 'package:expense/pages/loginpage.dart';
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'KEBS',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
+      theme: ThemeData( 
+          // primarySwatch: Colors.rd,
+          ),
       home: const SplashScreen(),
       routes: <String, WidgetBuilder>{
         '/login': (BuildContext context) => const LoginPage()

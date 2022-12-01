@@ -1,7 +1,9 @@
+import 'package:expense/pages/aad_oauth.dart';
 import 'package:expense/pages/loginpage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_walkthrough_screen/flutter_walkthrough_screen.dart';
+//import 'package:flutter_walkthrough_screen/flutter_walkthrough_screen.dart';
 import 'package:expense/utilities/style.dart';
+import 'onboard.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -35,36 +37,44 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           const Text(
               "Manage all your business process \n          with KEBS seamlessly",
               style: TextStyle(color: Colors.grey, fontSize: 13)),
-          const SizedBox(
-            height: 80,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                padding:
-                    EdgeInsets.only(top: 13, bottom: 13, left: 20, right: 20),
-                elevation: 20,
-                shape: const StadiumBorder(
-                    side: BorderSide(
-                        style: BorderStyle.solid,
-                        color: Colors.redAccent,
-                        width: 2.0)),
-                backgroundColor: Colors.redAccent),
-            onPressed: (() {}),
-            child: const Text('Next'),
-          ),
-          const SizedBox(height: 40),
-          const Text(
-            "Skip",
-            style: TextStyle(color: Colors.black, fontFamily: 'Ariel'),
-          )
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // ElevatedButton(
+          //   style: ElevatedButton.styleFrom(
+          //       padding:
+          //           EdgeInsets.only(top: 13, bottom: 13, left: 20, right: 20),
+          //       elevation: 20,
+          //       shape: const StadiumBorder(
+          //           side: BorderSide(
+          //               style: BorderStyle.solid,
+          //               color: Colors.redAccent,
+          //               width: 2.0)),
+          //       backgroundColor: Colors.redAccent),
+          //   onPressed: (() {}),
+          //   child: const Text('Next'),
+          // ),
+          // const SizedBox(height: 40),
+          // const Text(
+          //   "Skip",
+          //   style: TextStyle(color: Colors.black, fontFamily: 'Ariel'),
+          // )
         ],
       ),
     ),
     OnbordingData(
-      imageHeight: 180,
-      fit: BoxFit.contain,
+      //image: _imageFile ?? Image.asset('assets/tom.jpg') as ImageProvider,
       image: const AssetImage("assets/images/splash3.png"),
-      titleText: const Text(""),
+
+      imageHeight: 200,
+      fit: BoxFit.contain,
+      titleText: Text("", style: kTitleStyle
+          // TextStyle(
+          //   fontSize: 48,
+          //   fontWeight: FontWeight.bold,
+          // ),
+          ),
+
       descText: Column(
         children: [
           const SizedBox(
@@ -73,38 +83,46 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           Text("Approval & Notifications", style: kTitleStyle),
           const SizedBox(height: 18),
           const Text(
-              "Take decisions on various request you get \n        like timesheet,expense,varience",
+              "Take decisions on various request you get \n        like timesheet,expense,varience.",
               style: TextStyle(color: Colors.grey, fontSize: 13)),
-          const SizedBox(
-            height: 80,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.only(
-                    top: 13, bottom: 13, left: 20, right: 20),
-                elevation: 20,
-                shape: const StadiumBorder(
-                    side: BorderSide(
-                        style: BorderStyle.solid,
-                        color: Colors.redAccent,
-                        width: 2.0)),
-                backgroundColor: Colors.redAccent),
-            onPressed: (() {}),
-            child: const Text('Next'),
-          ),
-          const SizedBox(height: 40),
-          const Text(
-            "Skip",
-            style: TextStyle(color: Colors.black, fontFamily: 'Ariel'),
-          )
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // ElevatedButton(
+          //   style: ElevatedButton.styleFrom(
+          //       padding:
+          //           EdgeInsets.only(top: 13, bottom: 13, left: 20, right: 20),
+          //       elevation: 20,
+          //       shape: const StadiumBorder(
+          //           side: BorderSide(
+          //               style: BorderStyle.solid,
+          //               color: Colors.redAccent,
+          //               width: 2.0)),
+          //       backgroundColor: Colors.redAccent),
+          //   onPressed: (() {}),
+          //   child: const Text('Next'),
+          // ),
+          // const SizedBox(height: 40),
+          // const Text(
+          //   "Skip",
+          //   style: TextStyle(color: Colors.black, fontFamily: 'Ariel'),
+          // )
         ],
       ),
     ),
     OnbordingData(
-      imageHeight: 160,
-      fit: BoxFit.contain,
+      //image: _imageFile ?? Image.asset('assets/tom.jpg') as ImageProvider,
       image: const AssetImage("assets/images/splash4.png"),
-      titleText: const Text(""),
+
+      imageHeight: 200,
+      fit: BoxFit.contain,
+      titleText: Text("", style: kTitleStyle
+          // TextStyle(
+          //   fontSize: 48,
+          //   fontWeight: FontWeight.bold,
+          // ),
+          ),
+
       descText: Column(
         children: [
           const SizedBox(
@@ -115,42 +133,83 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           const Text(
               "Know what's happening in your organisation with\n             intuitive reports and dashboards",
               style: TextStyle(color: Colors.grey, fontSize: 13)),
-          const SizedBox(
-            height: 80,
-          ),
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.only(
-                    top: 13, bottom: 13, left: 20, right: 20),
-                elevation: 20,
-                shape: const StadiumBorder(
-                    side: BorderSide(
-                        style: BorderStyle.solid,
-                        color: Colors.redAccent,
-                        width: 2.0)),
-                backgroundColor: Colors.redAccent),
-            // void initState(){
-
-            //}
-            onPressed: () {
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: (context) => LoginPage()));
-
-              @override
-              void initState(BuildContext context) {
-                //Navigator.pushNamed(context, '/login');
-
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginPage()));
-              }
-            },
-            //onPressed: () => Navigator.pushNamed(context, '/login'),
-            child: const Text('Get Started'),
-          ),
-          const SizedBox(height: 40),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // ElevatedButton(
+          //   style: ElevatedButton.styleFrom(
+          //       padding:
+          //           EdgeInsets.only(top: 13, bottom: 13, left: 20, right: 20),
+          //       elevation: 20,
+          //       shape: const StadiumBorder(
+          //           side: BorderSide(
+          //               style: BorderStyle.solid,
+          //               color: Colors.redAccent,
+          //               width: 2.0)),
+          //       backgroundColor: Colors.redAccent),
+          //   onPressed: (() {}),
+          //   child: const Text('Next'),
+          // ),
+          // const SizedBox(height: 40),
+          // const Text(
+          //   "Skip",
+          //   style: TextStyle(color: Colors.black, fontFamily: 'Ariel'),
+          // )
         ],
       ),
     ),
+
+    // OnbordingData(
+    //   imageHeight: 180,
+    //   fit: BoxFit.contain,
+    //   image: const AssetImage("assets/images/splash4.png"),
+    //   titleText: const Text(""),
+    //   descText: Column(
+    //     children: [
+    //       const SizedBox(
+    //         height: 40,
+    //       ),
+    //       Text("Dashboard & Reports", style: kTitleStyle),
+    //       const SizedBox(height: 15),
+    //       const Text(
+    //           "Know what's happening in your organisation with\n             intuitive reports and dashboards",
+    //           style: TextStyle(color: Colors.grey, fontSize: 13)),
+    //       const SizedBox(
+    //         height: 20,
+    //       ),
+    //       // ElevatedButton(
+    //       //   style: ElevatedButton.styleFrom(
+    //       //       padding: const EdgeInsets.only(
+    //       //           top: 13, bottom: 13, left: 20, right: 20),
+    //       //       elevation: 20,
+    //       //       shape: const StadiumBorder(
+    //       //           side: BorderSide(
+    //       //               style: BorderStyle.solid,
+    //       //               color: Colors.redAccent,
+    //       //               width: 2.0)),
+    //       //       backgroundColor: Colors.redAccent),
+    //       //   // void initState(){
+
+    //       //   //}
+    //       //   onPressed: () {
+    //       //     // Navigator.push(context,
+    //       //     //     MaterialPageRoute(builder: (context) => LoginPage()));
+
+    //       //     @override
+    //       //     void initState(BuildContext context) {
+    //       //       //Navigator.pushNamed(context, '/login');
+
+    //       //       Navigator.push(context,
+    //       //           MaterialPageRoute(builder: (context) => LoginPage()));
+    //       //     }
+    //       //   },
+    //       //   //onPressed: () => Navigator.pushNamed(context, '/login'),
+    //       //   child: const Text('Get Started'),
+    //       // ),
+    //       // const SizedBox(height: 40),
+    //     ],
+    //   ),
+    // ),
 
     // OnbordingData(
     //   image: AssetImage("assets/images/mis.png"),
@@ -173,9 +232,15 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           end: Alignment.bottomRight,
           colors: [Colors.white, Colors.white]),
       pageRoute: MaterialPageRoute(
-        builder: (context) => const LoginPage(),
+        builder: (context) => LoginPage(),
       ),
       nextButton: const Text('Next'),
+
+      // const Text(
+      //   "NEXT",
+      //   style: TextStyle(
+      //       color: Colors.white, fontSize: 17, fontFamily: 'Plus Jakarta Sans'),
+      // ),
 
       // Padding(
       //   padding: const EdgeInsets.only(),
@@ -206,15 +271,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       //   ),
       // ),
       lastButton: const Text(
-        "GOT IT",
-        style: TextStyle(color: Colors.white, fontSize: 17),
+        "Get Started",
+        style: TextStyle(color: Colors.white, fontSize: 14),
       ),
+
       skipButton: const Text(
-        "SKIP",
-        style: TextStyle(color: Colors.purple, fontSize: 17),
+        "Skip",
+        style: TextStyle(
+            color: Color.fromARGB(176, 0, 0, 0),
+            fontSize: 15,
+            fontFamily: 'Plus Jakarta Sans'),
       ),
       selectedDotColor: Colors.redAccent,
-      unSelectdDotColor: Colors.grey,
+      unSelectdDotColor: const Color.fromARGB(152, 158, 158, 158),
     );
     return introScreen;
   }

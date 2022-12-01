@@ -31,13 +31,15 @@ class _LoginPageState extends State<LoginPage> {
         child: SafeArea(
           child: Center(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(
-                    padding: const EdgeInsets.only(top: 120),
-                    child: Image.asset(
-                      "assets/images/splash5.png",
-                      height: 200,
-                    )),
+                const SizedBox(
+                  height: 65,
+                ),
+                Image.asset(
+                  "assets/images/splash5.png",
+                  height: 200,
+                ),
                 const SizedBox(
                   height: 40,
                 ),
@@ -72,12 +74,12 @@ class _LoginPageState extends State<LoginPage> {
                       )),
                 ),
                 const SizedBox(
-                  height: 18,
+                  height: 25,
                 ),
                 const Text("Or, Sign in with your Email ID",
                     style: TextStyle(color: Colors.grey, fontSize: 13)),
                 const SizedBox(
-                  height: 40,
+                  height: 25,
                 ),
                 const SizedBox(
                   height: 60,
@@ -98,8 +100,8 @@ class _LoginPageState extends State<LoginPage> {
 
                   //         )),
                 ),
-                SizedBox(
-                  height: 8,
+                const SizedBox(
+                  height: 25,
                 ),
                 SizedBox(
                   height: 50,
@@ -111,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                             MaterialPageRoute(
                                 builder: (context) => const Dashboard()));
                       },
-                      child: Text(
+                      child: const Text(
                         'Sign In',
                         style: TextStyle(color: Colors.white),
                       ),
